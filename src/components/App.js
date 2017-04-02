@@ -1,10 +1,17 @@
 import '../assets/stylesheets/base.scss';
 import React, { Component } from 'react';
+import Header from "./Header/Header";
+import Body from "./Body/Body";
+import Footer from "./Footer/Footer";
 
 class App extends Component {
   render() {
     return(
-      <h1>Hello, {this.props.name}!</h1>
+      <div>
+        <Header />
+        <Body />
+        <Footer />
+      </div>
     )
   }
 };
