@@ -5,6 +5,8 @@ var mongoose = require('mongoose');
 var PORT = process.env.PORT || 8080
 var app = express();
 
+app.use(express.static('build'));
+
 app.use(bodyParser.urlencoded({extended:true}));//precise qu'on va use bodyParser et enlever mess d'erreur avec extended true
 app.use(bodyParser.json());
 
@@ -31,7 +33,7 @@ router.route('/')
       article.author = req.body.author;
       article.articleTitle = req.body.articleTitle;
       article.datePub = req.body.datePub;
-      console.log(article);
+      console.log(articles);
       article.save(function(err){
         if(err){
           res.send(err);

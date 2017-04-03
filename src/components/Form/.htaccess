@@ -1,0 +1,4 @@
+AuthName "Page d'administration protégée"
+AuthType Basic
+AuthUserFile "/Users/Master/Documents/Loic/Dev/Simplon/BlogProject/src/components/Form/.htpasswd"
+Require valid-user
