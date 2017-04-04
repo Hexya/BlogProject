@@ -14,7 +14,10 @@ mongoose.connect('mongodb://localhost/articles');//connect mongoose a notre base
 var articleSchema = mongoose.Schema({ //création du schema de base
   author:String,
   articleTitle:String,
-  datePub:String
+  datePub:String,
+  cat:String,
+  img:String,
+  desc:String
 });
 var Article = mongoose.model('Article', articleSchema);//création du model a l'aide du schema
 
@@ -33,7 +36,9 @@ router.route('/')
       article.author = req.body.author;
       article.articleTitle = req.body.articleTitle;
       article.datePub = req.body.datePub;
-      console.log(articles);
+      article.cat = req.body.cat;
+      article.img = req.body.img;
+      article.desc = req.body.desc;
       article.save(function(err){
         if(err){
           res.send(err);
@@ -41,7 +46,6 @@ router.route('/')
         res.send({message:'Article created'})
       });
   });
-
   router.route('/:article_id')
     .get(function(req, res){
       Article.findOne({_id: req.params.article_id}, function(err,article){
@@ -56,6 +60,9 @@ router.route('/')
         article.author = req.body.author;
         article.articleTitle = req.body.articleTitle;
         article.datePub = req.body.datePub;
+        article.cat = req.body.cat;
+        article.img = req.body.img;
+        article.desc = req.body.desc;
         article.save(function(err){
           if(err){
             res.send(err)

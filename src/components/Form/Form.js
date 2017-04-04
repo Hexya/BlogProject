@@ -21,6 +21,22 @@ const Form = () => (
           placeholder="author"
           required
         />
+        <label for="inputdatePub">Date</label>
+        <input
+          name="datePub"
+          type="text"
+          id="inputdatePub"
+          placeholder="ex: April 2, 2017"
+          required
+        />
+        <label for="inputauthor">Categorie</label>
+        <input
+          name="cat"
+          type="text"
+          id="inputcat"
+          placeholder="Categorie"
+          required
+        />
         <label for="inputarticleTitle">Titre</label>
         <input
           name="articleTitle"
@@ -29,12 +45,20 @@ const Form = () => (
           placeholder="Titre"
           required
         />
-        <label for="inputdatePub">Date</label>
+        <label for="inputarticleTitle">Description</label>
         <input
-          name="datePub"
+          name="desc"
           type="text"
-          id="inputdatePub"
-          placeholder="datePub"
+          id="inputdesc"
+          placeholder="Description"
+          required
+        />
+        <label for="inputarticleTitle">Photos</label>
+        <input
+          name="img"
+          type="text"
+          id="inputimg"
+          placeholder="Image au format Http://.."
           required
         />
         <button type="submit">
