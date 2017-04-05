@@ -57,7 +57,9 @@
     height: 150px;
     width: 580px;
     background-color: rgb(255, 255, 255);
-    p {padding: 0 20px 0 20px;}
+    p {
+      padding: 0 20px 0 20px;
+    }
     p:nth-child(1){
       font-size: 2em;
       padding-top: 15px;
@@ -65,6 +67,7 @@
     p:nth-child(2){
       margin-top: 3px;
       font-size: 0.9em;
+    }
     p:nth-child(3){
       font-size: 1.1em;
       margin-top: 5px;
