@@ -1,18 +1,10 @@
-import "../../assets/stylesheets/Form.scss";
 import React from "react";
 
-{/* <Files Form.js>
-AuthUserFile /.htpasswd
-AuthName "Accès restreint"
-AuthType Basic
-require valid-user
-</Files> */}
-
-const Form = () => (
-  <div className="container">
+const Update = () => (
+  <div className="container mt-4 ">
       <form className="addStyle" action="/api" method="post">
         <h2>
-          Add Ressources
+          Update Ressources
         </h2><div>
         <label for="inputauthor">Author</label>
         <input
@@ -62,11 +54,12 @@ const Form = () => (
           placeholder="Image au format Http://.."
           required
         /></div>
-        <button className="formBtn" type="submit">
+        <button className="updateBtn" type="submit">
           Send
         </button>
       </form>
+
   </div>
 );
 
-export default Form;
+export default Update;

@@ -46,6 +46,7 @@ class App extends Component {
         <div className="posBody">
           <div className="colCards">
             {cards}
+            <div className="lastArt">LASTEST ARTICLE</div>
           </div>
           <div className="colActu">
             <Actu />

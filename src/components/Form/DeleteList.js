@@ -26,7 +26,7 @@ class DeleteList extends React.Component {
   renderCards(){
     return this.state.data.map((el, i) => {
       return(
-       <Delete key={i} articleTitle={el.articleTitle} id={el._id}  />
+       <Delete key={i} author={el.author} articleTitle={el.articleTitle} datePub={el.datePub}  cat={el.cat} img={el.img} desc={el.desc} id={el._id}  />
       )
     })
   }

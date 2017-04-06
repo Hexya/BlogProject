@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald|Roboto|Roboto+Condensed');
+/*a
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+a*/
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +14,7 @@ body {
   background-color: rgb(252,252,252);
 }
 .posBody {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
 }
@@ -16,6 +25,11 @@ body {
   align-items: center;
   background-color: rgb(255,255,255);
   box-shadow: 0 0 0.3em rgb(220, 220, 220);
+}
+.lastArt {
+  font-size: 1.5em;
+  margin-top: 30px;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 .colActu {
   width: 340px;

@@ -1,0 +1,22 @@
+.footer {
+  margin: 40px 0 20px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+  .footText {
+    width: 1000px;
+    font-size: 0.8em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: grey;
+  }
+  .footText span {
+    font-family: 'Oswald', sans-serif;
+    color: black;
+  }
+
+@media screen and (max-width: 1000px) {
+  .footText {
+    width: 90%;
+  }
+}

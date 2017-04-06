@@ -1,0 +1,45 @@
+.headCont {
+  height: 350px;
+  width: 100%;
+  background-color: lightgrey;
+  .headMenu {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(252,252,252,0.7);
+    box-shadow: 0 0 0.3em rgb(220, 220, 220);
+    z-index: 4;
+    .listMenu {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      font-family: 'Roboto Condensed', sans-serif;
+      li {
+        padding: 21px 10px 21px 10px;
+        margin-top: -13px;
+        cursor: pointer;
+      }
+      li:nth-child(2):hover , li:nth-child(3):hover , li:nth-child(4):hover , li:nth-child(5):hover , li:nth-child(6):hover {
+        background-color: rgba(139, 139, 139,0.8);
+        transition: .3s;
+      }
+      li img {
+        height: 40px;
+      }
+    }
+  }
+  .headMenuBack {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(252,252,252);
+  }
+  .headBan {
+    height: 290px;
+    width: 100%;
+    background-color: lightblue;
+    // background-image: url('http://img4.hostingpics.net/pics/844463FRONTwallpaperElWood1920x10802.png');
+    background-image: url('http://img4.hostingpics.net/pics/993345banniere.jpg');
+    background-position: bottom;
+    background-size: cover;
+  }
+}
