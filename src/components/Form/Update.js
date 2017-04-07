@@ -4,7 +4,7 @@ const Update = () => (
   <div className="container mt-4 ">
       <form className="addStyle" action="/api" method="post">
         <h2>
-          Update Ressources
+          Update Ressources:
         </h2><div>
         <label for="inputauthor">Author</label>
         <input

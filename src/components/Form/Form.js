@@ -12,7 +12,7 @@ const Form = () => (
   <div className="container">
       <form className="addStyle" action="/api" method="post">
         <h2>
-          Add Ressources
+          Add Ressources:
         </h2><div>
         <label for="inputauthor">Author</label>
         <input
