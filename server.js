@@ -12,8 +12,8 @@ app.use(express.static('build'));
 app.use(bodyParser.urlencoded({extended:true}));//precise qu'on va use bodyParser et enlever mess d'erreur avec extended true
 app.use(bodyParser.json());
 
- // mongoose.connect('mongodb://localhost/articles');//connect mongoose a notre base de donées
-mongoose.connect('configDB.dbUrl')
+mongoose.connect('mongodb://localhost:27017/articles');//connect mongoose a notre base de donées
+// mongoose.connect('configDB.dbUrl')
 var articleSchema = mongoose.Schema({ //création du schema de base
   author:String,
   articleTitle:String,
